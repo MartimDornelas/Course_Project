@@ -5,7 +5,7 @@ smartphone. A full description is available at the site where the data was obtai
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-The experiment:
+- The experiment:
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a 
@@ -22,7 +22,7 @@ The gravitational force is assumed to have only low frequency components, theref
 was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
 
-Data units:
+- Data units:
 
 Subject: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
 Activity: Names of the 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
@@ -30,6 +30,7 @@ The acceleration signal from the smartphone accelerometer is in standard gravity
 The body acceleration signal obtained by subtracting the gravity from the total acceleration.
 The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
+- Data tables and variables:
 
 UCI_DATA is the data table created, containing training and test sets
 
@@ -516,7 +517,194 @@ Data Variables:
 [478] "angle(Y,gravityMean)"                
 [479] "angle(Z,gravityMean)" 
 
+
+UCI_DATA_MEAN_STD ist he data table with only the measurements on the mean and standard deviation for each measurement.
+
+Data Variables names from UCI_DATA_MEAN_STD:
+
+[1] "Subject"                                           
+ [2] "Activity"                                          
+ [3] "TimeBodyAccelerometerMean()-X"                     
+ [4] "TimeBodyAccelerometerMean()-Y"                     
+ [5] "TimeBodyAccelerometerMean()-Z"                     
+ [6] "TimeGravityAccelerometerMean()-X"                  
+ [7] "TimeGravityAccelerometerMean()-Y"                  
+ [8] "TimeGravityAccelerometerMean()-Z"                  
+ [9] "TimeBodyAccelerometerJerkMean()-X"                 
+[10] "TimeBodyAccelerometerJerkMean()-Y"                 
+[11] "TimeBodyAccelerometerJerkMean()-Z"                 
+[12] "TimeBodyGyroscopeMean()-X"                         
+[13] "TimeBodyGyroscopeMean()-Y"                         
+[14] "TimeBodyGyroscopeMean()-Z"                         
+[15] "TimeBodyGyroscopeJerkMean()-X"                     
+[16] "TimeBodyGyroscopeJerkMean()-Y"                     
+[17] "TimeBodyGyroscopeJerkMean()-Z"                     
+[18] "TimeBodyAccelerometerMagnitudeMean()"              
+[19] "TimeGravityAccelerometerMagnitudeMean()"           
+[20] "TimeBodyAccelerometerJerkMagnitudeMean()"          
+[21] "TimeBodyGyroscopeMagnitudeMean()"                  
+[22] "TimeBodyGyroscopeJerkMagnitudeMean()"              
+[23] "FrequencyBodyAccelerometerMean()-X"                
+[24] "FrequencyBodyAccelerometerMean()-Y"                
+[25] "FrequencyBodyAccelerometerMean()-Z"                
+[26] "FrequencyBodyAccelerometerMeanFreq()-X"            
+[27] "FrequencyBodyAccelerometerMeanFreq()-Y"            
+[28] "FrequencyBodyAccelerometerMeanFreq()-Z"            
+[29] "FrequencyBodyAccelerometerJerkMean()-X"            
+[30] "FrequencyBodyAccelerometerJerkMean()-Y"            
+[31] "FrequencyBodyAccelerometerJerkMean()-Z"            
+[32] "FrequencyBodyAccelerometerJerkMeanFreq()-X"        
+[33] "FrequencyBodyAccelerometerJerkMeanFreq()-Y"        
+[34] "FrequencyBodyAccelerometerJerkMeanFreq()-Z"        
+[35] "FrequencyBodyGyroscopeMean()-X"                    
+[36] "FrequencyBodyGyroscopeMean()-Y"                    
+[37] "FrequencyBodyGyroscopeMean()-Z"                    
+[38] "FrequencyBodyGyroscopeMeanFreq()-X"                
+[39] "FrequencyBodyGyroscopeMeanFreq()-Y"                
+[40] "FrequencyBodyGyroscopeMeanFreq()-Z"                
+[41] "FrequencyBodyAccelerometerMagnitudeMean()"         
+[42] "FrequencyBodyAccelerometerMagnitudeMeanFreq()"     
+[43] "FrequencyBodyAccelerometerJerkMagnitudeMean()"     
+[44] "FrequencyBodyAccelerometerJerkMagnitudeMeanFreq()" 
+[45] "FrequencyBodyGyroscopeMagnitudeMean()"             
+[46] "FrequencyBodyGyroscopeMagnitudeMeanFreq()"         
+[47] "FrequencyBodyGyroscopeJerkMagnitudeMean()"         
+[48] "FrequencyBodyGyroscopeJerkMagnitudeMeanFreq()"     
+[49] "Angle(Time_BodyAccelerometerMean,Gravity)"         
+[50] "Angle(Time_BodyAccelerometerJerkMean),GravityMean)"
+[51] "Angle(Time_BodyGyroscopeMean,GravityMean)"         
+[52] "Angle(Time_BodyGyroscopeJerkMean,GravityMean)"     
+[53] "Angle(X,GravityMean)"                              
+[54] "Angle(Y,GravityMean)"                              
+[55] "Angle(Z,GravityMean)"                              
+[56] "TimeBodyAccelerometerSTD()-X"                      
+[57] "TimeBodyAccelerometerSTD()-Y"                      
+[58] "TimeBodyAccelerometerSTD()-Z"                      
+[59] "TimeGravityAccelerometerSTD()-X"                   
+[60] "TimeGravityAccelerometerSTD()-Y"                   
+[61] "TimeGravityAccelerometerSTD()-Z"                   
+[62] "TimeBodyAccelerometerJerkSTD()-X"                  
+[63] "TimeBodyAccelerometerJerkSTD()-Y"                  
+[64] "TimeBodyAccelerometerJerkSTD()-Z"                  
+[65] "TimeBodyGyroscopeSTD()-X"                          
+[66] "TimeBodyGyroscopeSTD()-Y"                          
+[67] "TimeBodyGyroscopeSTD()-Z"                          
+[68] "TimeBodyGyroscopeJerkSTD()-X"                      
+[69] "TimeBodyGyroscopeJerkSTD()-Y"                      
+[70] "TimeBodyGyroscopeJerkSTD()-Z"                      
+[71] "TimeBodyAccelerometerMagnitudeSTD()"               
+[72] "TimeGravityAccelerometerMagnitudeSTD()"            
+[73] "TimeBodyAccelerometerJerkMagnitudeSTD()"           
+[74] "TimeBodyGyroscopeMagnitudeSTD()"                   
+[75] "TimeBodyGyroscopeJerkMagnitudeSTD()"               
+[76] "FrequencyBodyAccelerometerSTD()-X"                 
+[77] "FrequencyBodyAccelerometerSTD()-Y"                 
+[78] "FrequencyBodyAccelerometerSTD()-Z"                 
+[79] "FrequencyBodyAccelerometerJerkSTD()-X"             
+[80] "FrequencyBodyAccelerometerJerkSTD()-Y"             
+[81] "FrequencyBodyAccelerometerJerkSTD()-Z"             
+[82] "FrequencyBodyGyroscopeSTD()-X"                     
+[83] "FrequencyBodyGyroscopeSTD()-Y"                     
+[84] "FrequencyBodyGyroscopeSTD()-Z"                     
+[85] "FrequencyBodyAccelerometerMagnitudeSTD()"          
+[86] "FrequencyBodyAccelerometerJerkMagnitudeSTD()"      
+[87] "FrequencyBodyGyroscopeMagnitudeSTD()"              
+[88] "FrequencyBodyGyroscopeJerkMagnitudeSTD()" 
+
+Tidy_UCI_DATA_MEAN is the final data table with the average of each variable for each activity and each subject.
+ 
+ Data Variables names from Tidy_UCI_DATA_MEAN:
+ 
+ [1] "Subject"                                           
+ [2] "Activity"                                          
+ [3] "TimeBodyAccelerometerMean()-X"                     
+ [4] "TimeBodyAccelerometerMean()-Y"                     
+ [5] "TimeBodyAccelerometerMean()-Z"                     
+ [6] "TimeGravityAccelerometerMean()-X"                  
+ [7] "TimeGravityAccelerometerMean()-Y"                  
+ [8] "TimeGravityAccelerometerMean()-Z"                  
+ [9] "TimeBodyAccelerometerJerkMean()-X"                 
+[10] "TimeBodyAccelerometerJerkMean()-Y"                 
+[11] "TimeBodyAccelerometerJerkMean()-Z"                 
+[12] "TimeBodyGyroscopeMean()-X"                         
+[13] "TimeBodyGyroscopeMean()-Y"                         
+[14] "TimeBodyGyroscopeMean()-Z"                         
+[15] "TimeBodyGyroscopeJerkMean()-X"                     
+[16] "TimeBodyGyroscopeJerkMean()-Y"                     
+[17] "TimeBodyGyroscopeJerkMean()-Z"                     
+[18] "TimeBodyAccelerometerMagnitudeMean()"              
+[19] "TimeGravityAccelerometerMagnitudeMean()"           
+[20] "TimeBodyAccelerometerJerkMagnitudeMean()"          
+[21] "TimeBodyGyroscopeMagnitudeMean()"                  
+[22] "TimeBodyGyroscopeJerkMagnitudeMean()"              
+[23] "FrequencyBodyAccelerometerMean()-X"                
+[24] "FrequencyBodyAccelerometerMean()-Y"                
+[25] "FrequencyBodyAccelerometerMean()-Z"                
+[26] "FrequencyBodyAccelerometerMeanFreq()-X"            
+[27] "FrequencyBodyAccelerometerMeanFreq()-Y"            
+[28] "FrequencyBodyAccelerometerMeanFreq()-Z"            
+[29] "FrequencyBodyAccelerometerJerkMean()-X"            
+[30] "FrequencyBodyAccelerometerJerkMean()-Y"            
+[31] "FrequencyBodyAccelerometerJerkMean()-Z"            
+[32] "FrequencyBodyAccelerometerJerkMeanFreq()-X"        
+[33] "FrequencyBodyAccelerometerJerkMeanFreq()-Y"        
+[34] "FrequencyBodyAccelerometerJerkMeanFreq()-Z"        
+[35] "FrequencyBodyGyroscopeMean()-X"                    
+[36] "FrequencyBodyGyroscopeMean()-Y"                    
+[37] "FrequencyBodyGyroscopeMean()-Z"                    
+[38] "FrequencyBodyGyroscopeMeanFreq()-X"                
+[39] "FrequencyBodyGyroscopeMeanFreq()-Y"                
+[40] "FrequencyBodyGyroscopeMeanFreq()-Z"                
+[41] "FrequencyBodyAccelerometerMagnitudeMean()"         
+[42] "FrequencyBodyAccelerometerMagnitudeMeanFreq()"     
+[43] "FrequencyBodyAccelerometerJerkMagnitudeMean()"     
+[44] "FrequencyBodyAccelerometerJerkMagnitudeMeanFreq()" 
+[45] "FrequencyBodyGyroscopeMagnitudeMean()"             
+[46] "FrequencyBodyGyroscopeMagnitudeMeanFreq()"         
+[47] "FrequencyBodyGyroscopeJerkMagnitudeMean()"         
+[48] "FrequencyBodyGyroscopeJerkMagnitudeMeanFreq()"     
+[49] "Angle(Time_BodyAccelerometerMean,Gravity)"         
+[50] "Angle(Time_BodyAccelerometerJerkMean),GravityMean)"
+[51] "Angle(Time_BodyGyroscopeMean,GravityMean)"         
+[52] "Angle(Time_BodyGyroscopeJerkMean,GravityMean)"     
+[53] "Angle(X,GravityMean)"                              
+[54] "Angle(Y,GravityMean)"                              
+[55] "Angle(Z,GravityMean)"                              
+[56] "TimeBodyAccelerometerSTD()-X"                      
+[57] "TimeBodyAccelerometerSTD()-Y"                      
+[58] "TimeBodyAccelerometerSTD()-Z"                      
+[59] "TimeGravityAccelerometerSTD()-X"                   
+[60] "TimeGravityAccelerometerSTD()-Y"                   
+[61] "TimeGravityAccelerometerSTD()-Z"                   
+[62] "TimeBodyAccelerometerJerkSTD()-X"                  
+[63] "TimeBodyAccelerometerJerkSTD()-Y"                  
+[64] "TimeBodyAccelerometerJerkSTD()-Z"                  
+[65] "TimeBodyGyroscopeSTD()-X"                          
+[66] "TimeBodyGyroscopeSTD()-Y"                          
+[67] "TimeBodyGyroscopeSTD()-Z"                          
+[68] "TimeBodyGyroscopeJerkSTD()-X"                      
+[69] "TimeBodyGyroscopeJerkSTD()-Y"                      
+[70] "TimeBodyGyroscopeJerkSTD()-Z"                      
+[71] "TimeBodyAccelerometerMagnitudeSTD()"               
+[72] "TimeGravityAccelerometerMagnitudeSTD()"            
+[73] "TimeBodyAccelerometerJerkMagnitudeSTD()"           
+[74] "TimeBodyGyroscopeMagnitudeSTD()"                   
+[75] "TimeBodyGyroscopeJerkMagnitudeSTD()"               
+[76] "FrequencyBodyAccelerometerSTD()-X"                 
+[77] "FrequencyBodyAccelerometerSTD()-Y"                 
+[78] "FrequencyBodyAccelerometerSTD()-Z"                 
+[79] "FrequencyBodyAccelerometerJerkSTD()-X"             
+[80] "FrequencyBodyAccelerometerJerkSTD()-Y"             
+[81] "FrequencyBodyAccelerometerJerkSTD()-Z"             
+[82] "FrequencyBodyGyroscopeSTD()-X"                     
+[83] "FrequencyBodyGyroscopeSTD()-Y"                     
+[84] "FrequencyBodyGyroscopeSTD()-Z"                     
+[85] "FrequencyBodyAccelerometerMagnitudeSTD()"          
+[86] "FrequencyBodyAccelerometerJerkMagnitudeSTD()"      
+[87] "FrequencyBodyGyroscopeMagnitudeSTD()"              
+[88] "FrequencyBodyGyroscopeJerkMagnitudeSTD()" 
+ 
  
 Notes: 
 - Features are normalized and bounded within [-1,1].
-- Each vector is a row on the text file.
+- Each vector in Tidy_UCI_DATA_MEAN is a row on the text file.
